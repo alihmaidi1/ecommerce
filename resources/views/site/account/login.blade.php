@@ -34,7 +34,7 @@
                     <span class="astk">*</span>
                 </label>
                 <input type="text" name="email" value="{{ old("email") }}" id="user-name-email" class="text-field @error('email')is-invalid @enderror" placeholder="{{ __("messages.Email") }}">
-           
+
                 @error('email')
                 <span style="color: rgb(202, 1, 1);font-weight:300" role="alert">
                     <strong>{{ $message }}</strong>
@@ -47,7 +47,7 @@
                     <span class="astk">*</span>
                 </label>
                 <input type="text" value="{{ old("password") }}" name="password" id="login-password" class="text-field @error('password') is-invalid @enderror" placeholder="{{ __("messages.Password") }}">
-            
+
                 @error('password')
                 <span style="color: rgb(202, 1, 1);font-weight:300" role="alert">
                     <strong>{{ $message }}</strong>
@@ -55,7 +55,7 @@
                 @enderror
 
 
-            
+
             </div>
             <div class="group-inline u-s-m-b-30">
                 <div class="group-1">
@@ -74,11 +74,7 @@
             <br/>
             <br/>
 
-                <a href="{{ url("/auth/login/facebook") }}" class="button bg-primary text-center w-100" style="color: #fff;display:block">{{ __("messages.Login With Facebook") }}<i class="fab fa-facebook" ></i></a>
-            <br/>
-            <br/>
-                <a  href="{{ url("/auth/login/google") }}" class="button  text-center w-100" style="color: #fff;background:rgb(228, 3, 37);display:block">{{ __("messages.Login With google") }}<i class="fab fa-google" ></i></a>
-            
+
             </div>
         </form>
     </div>
